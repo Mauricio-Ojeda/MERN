@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 
-import '../layout/login.css';
+import '../layout/login-nuevaCuenta.css';
 import {Container, Row, Col} from 'react-bootstrap';
 import {Form, Button} from 'react-bootstrap';
 
