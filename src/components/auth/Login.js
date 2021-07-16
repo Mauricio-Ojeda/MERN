@@ -38,13 +38,13 @@ const Login = () => {
                 <h1 id="title" className="mb-5 p-3">Bienvenido! Inicie su Sesion</h1>
                 <Container className="container-row col-md-8" >
                     <Row  >
-                        <Col className="mb-2" md={6} sm={12}>
-                            <img className="w-100 h-100" src={mascotas} alt="mascotas"/>
+                        <Col className="p-0" md={6} sm={12}>
+                            <img className="w-100 h-100 " src={mascotas} alt="mascotas"/>
                         </Col>
-                        <Col className="mt-2 p-3 d-flex align-items-center" md={6} sm={12}>
+                        <Col className="mt-2 p-4 d-flex align-items-center" md={6} sm={12}>
                             <Form className="form w-100 mt-4" onSubmit={handleOnSubmit} >
-                                <Form.Group controlId="formBasicEmail">
-                                    <Form.Label>Dirección de Email</Form.Label>
+                                <Form.Group className=" mb-5" controlId="formBasicEmail">
+                                    <Form.Label>  Dirección de Email</Form.Label>
                                     <Form.Control 
                                         name="email" 
                                         value={email} 
@@ -58,7 +58,7 @@ const Login = () => {
                                 </Form.Group>
 
                                 <Form.Group controlId="formBasicPassword">
-                                    <Form.Label>Contraseña</Form.Label>
+                                    <Form.Label>  Contraseña</Form.Label>
                                     <Form.Control 
                                         name="password" 
                                         value={password} 
@@ -78,7 +78,7 @@ const Login = () => {
                                 >
                                     Iniciar Sesion
                                 </Button>
-                                <Link to={'/nueva-cuenta'} className="nueva-cuenta">
+                                <Link to={'/nueva-cuenta'} className="mt-3 nueva-cuenta">
                                     Crear Cuenta
                                 </Link>
                             </Form>

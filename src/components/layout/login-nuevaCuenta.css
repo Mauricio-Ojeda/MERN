@@ -1,18 +1,58 @@
+:root {
+    --blanco: #ffffff;
+    --rosa1: #FFE2E2;
+    --rosa2: #FFC7C7;
+    --gris1: #F6F6F6;
+    --gris2: #333030;
+    --negro: #000000;
+    --headingFont:'Raleway', sans-serif;
+    --textFont:  'Roboto', sans-serif;
+  }
+  
+  /* tags */
 
 body{
     margin-top: 12%;
-    background-image: url('../../assets/fondo.jpg')
+    /* background-image: url('../../assets/fondo.jpg') */
 }
 
+
+
+/* id */
+
+#btn-login{
+    margin-top: 1.5rem;
+    font-size: 1.4rem;
+    background-color: var(--rosa2);
+    color: var(--negro);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-style: none;
+    
+}
+
+#btn-login:hover{
+    box-shadow: 4px 1px 33px -7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 4px 1px 33px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 1px 33px -7px rgba(0,0,0,0.75);
+    background-color: var(--rosa1);
+
+}   
+
+
 #title{
-  font-size: 3.5rem;
-  text-shadow: 5px 1px 12px rgba(150, 150, 150, 1);
+  color:var(--rosa2) ;   
+  font-size: 3.5rem;  
   
 }
 
+/* class */
 
 .container-row{
-    background: #dc8191;
+    background: var(--gris1);
     box-shadow: 9px 10px 33px 1px rgba(0,0,0,0.75);
     -webkit-box-shadow: 9px 10px 33px 1px rgba(0,0,0,0.75);
     -moz-box-shadow: 9px 10px 33px 1px rgba(0,0,0,0.75);
@@ -23,21 +63,9 @@ body{
 .form{
     font-size: 1.5rem;
     font-weight: bold;  
-    color: white;  
+    color: var(--negro);  
 
 }
-
-#btn-login{
-    margin-top: 1.5rem;
-    font-size: 1.3rem;
-    
-}
-
-#btn-login:hover{
-    box-shadow: 4px 1px 33px -7px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 4px 1px 33px -7px rgba(0,0,0,0.75);
-    -moz-box-shadow: 4px 1px 33px -7px rgba(0,0,0,0.75);
-}    
 
 .form-input{
     font-size: 1.2rem;
@@ -48,7 +76,7 @@ body{
 }
 
 .nueva-cuenta{
-    display: block;
+   
     text-align: left;
     font-size: 1.2rem;
 }

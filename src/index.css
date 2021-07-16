@@ -1,12 +1,13 @@
 :root {
   --blanco: #ffffff;
-  --rosa1: #da7e90;
-  --gris2: #2f3848;
-  --gris3: #1a202d;
-  --negro: #000000;
+  --rosa1: #FFE2E2;
+  --rosa2: #FFC7C7;
+  --gris2: #333030;
+  --gris1: #F6F6F6;
   --headingFont:'Raleway', sans-serif;
   --textFont:  'Roboto', sans-serif;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 } 
@@ -30,7 +31,7 @@ h1, h2 {
   font-weight: 900;
   margin: 0 0 4rem 0;
   text-align: center;
-  color: var(--blanco);
+  color: var(--rosa2);
 }
 h1 span {
   font-weight: 400;
