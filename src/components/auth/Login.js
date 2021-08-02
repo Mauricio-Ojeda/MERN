@@ -71,8 +71,8 @@ const Login = () => {
                                 </Form.Group>
                                 
                                 <Button 
-                                    id="btn-login" 
-                                    className=" btn-block font-weight-bold mt-5 mb-3 py-3" 
+                                    
+                                    className=" btn-block font-weight-bold mt-5 mb-3" 
                                     variant="primary" 
                                     type="submit"
                                 >

@@ -13,34 +13,12 @@
 
 body{
     margin-top: 12%;
-    /* background-image: url('../../assets/fondo.jpg') */
-}
-
-
-
-/* id */
-
-#btn-login{
-    margin-top: 1.5rem;
-    font-size: 1.4rem;
-    background-color: var(--rosa2);
-    color: var(--negro);
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-    border-style: none;
     
 }
 
-#btn-login:hover{
-    box-shadow: 4px 1px 33px -7px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 4px 1px 33px -7px rgba(0,0,0,0.75);
-    -moz-box-shadow: 4px 1px 33px -7px rgba(0,0,0,0.75);
-    background-color: var(--rosa1);
 
-}   
+
+/* id */  
 
 
 #title{

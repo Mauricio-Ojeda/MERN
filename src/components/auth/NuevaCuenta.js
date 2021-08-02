@@ -98,7 +98,7 @@ const NuevaCuenta = () => {
                                     />
                                 </Form.Group>
                                 
-                                <Button id="btn-login" className=" btn-block font-weight-bold mt-5 mb-3 py-3" variant="primary" type="submit">
+                                <Button  className=" btn-block font-weight-bold mt-5 mb-3 " variant="primary" type="submit">
                                     Registrarse
                                 </Button>
                                 <Link to={'/'} className="nueva-cuenta">
