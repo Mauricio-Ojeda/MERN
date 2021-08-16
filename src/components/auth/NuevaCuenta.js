@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 
 import '../layout/login-nuevaCuenta.css';
-import {Container, Row, Col} from 'react-bootstrap';
+import {Container, Col} from 'react-bootstrap';
 import {Form, Button} from 'react-bootstrap';
 
 
@@ -44,7 +44,7 @@ const NuevaCuenta = () => {
                          <h1 id="title" className="mb-3 p-3">Crear Cuenta</h1>
 
                         <Col className="my-2 p-0 w-100 d-flex align-items-center" >
-                            <Form className="form  mt-4" onSubmit={handleOnSubmit} >
+                            <Form className="form py-3 mt-4" onSubmit={handleOnSubmit} >
                                 
                                 <Form.Group controlId="formBasicText">
                                     <Form.Label>Nombre de Usuario</Form.Label>
@@ -101,7 +101,7 @@ const NuevaCuenta = () => {
                                 <Button  className=" btn-block font-weight-bold mt-5 mb-3 " variant="primary" type="submit">
                                     Registrarse
                                 </Button>
-                                <Link to={'/'} className="nueva-cuenta">
+                                <Link to={'/'} className="nueva-cuenta ">
                                     Volver a Iniciar Sesion
                                 </Link>
                             </Form>

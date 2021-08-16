@@ -3,7 +3,7 @@ import React from 'react'
 import AgregarPacientes from './AgregarPacientes';
 import ListadoPacientes from './ListadoPacientes';
 
-import {Container, Col} from 'react-bootstrap';
+import {Container} from 'react-bootstrap';
 
 const SideBar = () => {
     return (

@@ -15,9 +15,7 @@ body{
    display: flex;
    justify-content: center;
    align-items: center;
-   min-height: 100vh;
-   margin: 2% 0;
-   
+   min-height: 100vh; 
     
 }
 
@@ -61,6 +59,6 @@ body{
 
 .nueva-cuenta{   
     text-align: left;
-    font-size: 1.2rem;    
+    font-size: 1.2rem;        
 
 }
