@@ -24,6 +24,7 @@ body {
   font-size: 1.6rem;
   font-family: var(--textFont);
   
+  
 }
 
 
@@ -76,4 +77,8 @@ a {
   color: var(--negro);
 
 
+}
+
+.container-pacientes{
+  min-width: 90vw;
 }

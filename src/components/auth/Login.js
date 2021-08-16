@@ -34,7 +34,7 @@ const Login = () => {
 
     return (
                    
-            <Container id="body" >
+            <Container >
                 <h1 id="title" className="mb-5 p-3">Bienvenido! Inicie su Sesion</h1>
                 <Container className="container-row col-md-8" >
                     <Row  >

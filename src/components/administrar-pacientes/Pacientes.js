@@ -5,12 +5,14 @@ import {Container, Row, Col} from 'react-bootstrap';
 
 const Pacientes = () => {
     return (
-      <Container fluid>
-          <Row>
+      <Container className="container-pacientes">
+          <Row >
+            <Col sm={12} md={4}> 
               <SideBar/>
-              <Col>
+            </Col>  
+            <Col>
                   <h1>Main</h1>
-              </Col>
+            </Col>
           </Row>
       </Container>
     )

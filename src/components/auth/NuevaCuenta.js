@@ -39,12 +39,12 @@ const NuevaCuenta = () => {
 
     return (
                    
-            <Container id="body" >
-                <h1 id="title" className="mb-5 p-3">Crear Cuenta</h1>
+            <Container   >                
                 <Container className="container-row col-md-6 col-sm-8" >
-                    <Row  >                        
-                        <Col className="mt-2 p-5 d-flex align-items-center" >
-                            <Form className="form w-100 mt-4" onSubmit={handleOnSubmit} >
+                         <h1 id="title" className="mb-3 p-3">Crear Cuenta</h1>
+
+                        <Col className="my-2 p-0 w-100 d-flex align-items-center" >
+                            <Form className="form  mt-4" onSubmit={handleOnSubmit} >
                                 
                                 <Form.Group controlId="formBasicText">
                                     <Form.Label>Nombre de Usuario</Form.Label>
@@ -109,7 +109,7 @@ const NuevaCuenta = () => {
                             
                             
                         </Col>
-                    </Row>
+                  
                 </Container>
             </Container>
         
