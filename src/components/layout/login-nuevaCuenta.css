@@ -12,10 +12,14 @@
   /* tags */
 
 body{
-    margin-top: 12%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   margin: 2% 0;
+   
     
 }
-
 
 
 /* id */  
@@ -35,13 +39,15 @@ body{
     -webkit-box-shadow: 9px 10px 33px 1px rgba(0,0,0,0.75);
     -moz-box-shadow: 9px 10px 33px 1px rgba(0,0,0,0.75);
     opacity: 0.9;
+    width: 65vw;
     
 }
 
 .form{
     font-size: 1.5rem;
     font-weight: bold;  
-    color: var(--negro);  
+    color: var(--negro);
+    width: 100%;  
 
 }
 
@@ -53,8 +59,8 @@ body{
     
 }
 
-.nueva-cuenta{
-   
+.nueva-cuenta{   
     text-align: left;
-    font-size: 1.2rem;
+    font-size: 1.2rem;    
+
 }
