@@ -40,11 +40,11 @@ const NuevaCuenta = () => {
     return (
                    
             <Container   >                
-                <Container className="container-row col-md-6 col-sm-8" >
-                         <h1 id="title" className="mb-3 p-3">Crear Cuenta</h1>
+                <Container className="container-row p-3 col-md-6 col-sm-8" >
+                         <h1 id="title" className="mb-3 p-4">Crear Cuenta</h1>
 
-                        <Col className="my-2 p-0 w-100 d-flex align-items-center" >
-                            <Form className="form py-3 mt-4" onSubmit={handleOnSubmit} >
+                        <Col className="my-2 p-0 w-90 d-flex align-items-center" >
+                            <Form className="form p-5 mt-4" onSubmit={handleOnSubmit} >
                                 
                                 <Form.Group controlId="formBasicText">
                                     <Form.Label>Nombre de Usuario</Form.Label>
