@@ -82,3 +82,9 @@ a {
 .container-pacientes{
   min-width: 90vw;
 }
+
+.col2-pacientes{
+  background-color:  #dddbdb;
+  color: var(--gris1);
+}
+

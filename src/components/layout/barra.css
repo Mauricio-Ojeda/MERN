@@ -1,0 +1,7 @@
+#barra-link {
+    color: var(--gris1);
+  }
+
+#barra-link:hover{
+    color: rgb(201, 126, 236);
+}
