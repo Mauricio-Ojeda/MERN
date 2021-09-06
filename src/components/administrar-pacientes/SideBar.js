@@ -1,7 +1,7 @@
 import React from 'react'
 
-import AgregarPacientes from './AgregarPacientes';
-import ListadoPacientes from './ListadoPacientes';
+import AgregarPacientes from './side-bar/AgregarPacientes';
+import ListadoPacientes from './side-bar/ListadoPacientes';
 
 import {Container} from 'react-bootstrap';
 

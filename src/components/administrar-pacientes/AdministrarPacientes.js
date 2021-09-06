@@ -1,10 +1,10 @@
 import React from 'react'
 import SideBar from './SideBar';
-import Barra from './Barra';
+import Main from './Main';
 
 import {Container, Row, Col} from 'react-bootstrap';
 
-const Pacientes = () => {
+const AdministrarPacientes = () => {
     return (
       <Container className="container-pacientes ">
           <Row className="mt-5">
@@ -12,11 +12,13 @@ const Pacientes = () => {
               <SideBar/>
             </Col>  
             <Col className="col2-pacientes p-0">
-                  <Barra/>
+                 <Main
+                   
+                 />
             </Col>
           </Row>
       </Container>
     )
 }
 
-export default Pacientes
+export default AdministrarPacientes

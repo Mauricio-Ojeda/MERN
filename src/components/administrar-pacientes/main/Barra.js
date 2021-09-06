@@ -1,6 +1,6 @@
 import React from 'react'
 
-import "../layout/barra.css";
+import "../../layout/barra.css";
 
 import {Container, Navbar, Nav } from 'react-bootstrap'
 
