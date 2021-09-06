@@ -4,7 +4,7 @@ import  Login  from './components/auth/Login';
 import  NuevaCuenta  from './components/auth/NuevaCuenta';
 import  AdministrarPacientes  from './components/administrar-pacientes/AdministrarPacientes';
 
-import PacienteState from './context/pacientes/pacientesContext/PacienteState';
+import PacienteState from './context/pacientes/PacienteState';
 
 
 function App() {
