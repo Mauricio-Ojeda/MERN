@@ -9,7 +9,7 @@ const AgregarPacientes = () => {
 
     // Obtener el state de agregar paciente
     const pacientesContext = useContext(pacienteContext);
-    const { AgregarPaciente } = pacientesContext;
+    const { formulario, mostrarFormulario } = pacientesContext;
 
 
     //State para el Paciente
@@ -46,9 +46,13 @@ const AgregarPacientes = () => {
     
     return (
         <Fragment>
-             <Button variant="primary" className="btn-block font-weight-bold "> Agregar Paciente</Button>
+             <Button 
+                variant="primary" 
+                className="btn-block font-weight-bold "
+                onClick= { () => mostrarFormulario()}
+            > Agregar Paciente</Button>
              
-             {(AgregarPaciente) ? (
+             {(formulario) ? (
                     <Form className="text-left font-weight-bold mt-5">
                         <Form.Group className="mb-4" controlId="formBasicPropietario">
                             <Form.Label >Nombre Propietario</Form.Label>

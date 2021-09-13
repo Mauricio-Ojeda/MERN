@@ -2,11 +2,12 @@ import React,{ useReducer } from 'react'
 
 import pacienteContext from './pacienteContext';
 import pacienteReducer from './pacienteReducer';
+import { FORMULARIO_PACIENTE } from '../../types';
 
 const PacienteState = props => {
     const initialState = {
 
-        agregarPaciente: false
+        formulario: false
     }
 
     // Dispatch  para ejecutar las acciones
@@ -15,10 +16,17 @@ const PacienteState = props => {
 
     // Funciones para el CRUD
 
+    const mostrarFormulario = () => {
+        dispatch({
+            type: FORMULARIO_PACIENTE
+        })
+    }
+
     return (
         <pacienteContext.Provider
             value={{
-                nuevo: state.agregarPaciente
+                formulario: state.formulario,
+                mostrarFormulario
             }}
         >
             {props.children}
