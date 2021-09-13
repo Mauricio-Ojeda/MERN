@@ -1,14 +1,21 @@
-import { FORMULARIO_PACIENTE } from '../../types'
+import { FORMULARIO_PACIENTE, OBTENER_PACIENTES } from '../../types'
 
-export default (state, action) => {
+const  pacientesReducer = (state, action) => {
     switch(action.type) {
         case FORMULARIO_PACIENTE:
             return {
                 ...state,
                 formulario: true
             }
+        case OBTENER_PACIENTES:
+            return {
+                ...state,
+                pacientes: action.payload
+            }    
 
         default: 
             return state;
     }
 }
+
+export default pacientesReducer

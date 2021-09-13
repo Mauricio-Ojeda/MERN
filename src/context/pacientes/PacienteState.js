@@ -2,16 +2,22 @@ import React,{ useReducer } from 'react'
 
 import pacienteContext from './pacienteContext';
 import pacienteReducer from './pacienteReducer';
-import { FORMULARIO_PACIENTE } from '../../types';
+import { FORMULARIO_PACIENTE, OBTENER_PACIENTES } from '../../types';
+
+
 
 const PacienteState = props => {
+
+    const pacientes = [
+        {id: 1, nombre: 'bubba'},
+        {id: 3, nombre: 'Dora'},
+        {id: 2, nombre: 'Oti'},
+        {id: 4, nombre: 'Kiara'}
+    
+    ]
+
     const initialState = {
-        pacientes : [
-            {id: 1, nombre: 'bubba'},
-            {id: 2, nombre: 'Oti'},
-            {id: 3, nombre: 'Dora'},
-            {id: 4, nombre: 'Kiara'}
-        ],
+        pacientes : [],
         formulario: false
     }
 
@@ -27,12 +33,23 @@ const PacienteState = props => {
         })
     }
 
+    // Obtener los pacientes
+
+    const obtenerPacientes =  () => {
+        dispatch({
+            type: OBTENER_PACIENTES,
+            payload: pacientes
+
+        })
+    }
+
     return (
         <pacienteContext.Provider
             value={{
                 pacientes: state.pacientes,
                 formulario: state.formulario,
-                mostrarFormulario
+                mostrarFormulario,
+                obtenerPacientes
             }}
         >
             {props.children}

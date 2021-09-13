@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import pacienteContext from '../../../context/pacientes/pacienteContext';
 
 import Paciente from './Paciente';
@@ -9,7 +9,12 @@ const ListadoPacientes = () => {
 
     // Extraer pacientes del state inicial
     const pacientesContext = useContext(pacienteContext);
-    const { pacientes } = pacientesContext;
+    const { pacientes, obtenerPacientes } = pacientesContext;
+
+    // Obtener pacientes cuando carga el componente
+    useEffect(() => {
+        obtenerPacientes();
+    }, []);
     
     // Verifica si pacientes no esta vacio
     if( pacientes.length === 0 ) return null;
