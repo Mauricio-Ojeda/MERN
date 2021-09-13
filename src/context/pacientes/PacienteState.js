@@ -6,7 +6,12 @@ import { FORMULARIO_PACIENTE } from '../../types';
 
 const PacienteState = props => {
     const initialState = {
-
+        pacientes : [
+            {id: 1, nombre: 'bubba'},
+            {id: 2, nombre: 'Oti'},
+            {id: 3, nombre: 'Dora'},
+            {id: 4, nombre: 'Kiara'}
+        ],
         formulario: false
     }
 
@@ -25,6 +30,7 @@ const PacienteState = props => {
     return (
         <pacienteContext.Provider
             value={{
+                pacientes: state.pacientes,
                 formulario: state.formulario,
                 mostrarFormulario
             }}
